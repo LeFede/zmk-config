@@ -48,6 +48,63 @@ NONE  _  _  _  _  _        _  _  _  _  _  NONE
 
 ---
 
+## **Capa 4: WinNum** (hold G)
+```
+NONE  _  _  _  _  _          _    W+7  W+8  W+9  _  NONE
+NONE  _  _  _  _  G(hold)    _    W+4  W+5  W+6  _  NONE
+NONE  _  _  _  _  _          W+0  W+1  W+2  W+3  _  NONE
+```
+**Uso:**
+- Hold G + tap M = Win+1
+- Hold G + hold M = Win+Shift+1
+- Y así con todos los números en sus posiciones del numpad
+
+---
+
+## **Capa 5: Tmux** (hold T)
+```
+NONE  _  _  _  _  T(hold)    _  _          _          _         _      NONE
+NONE  _  _  _  _  _          _  _          C-SPC %    C-SPC "   C-SPC; NONE
+NONE  Z  _  _  _  _          _  _          _          _         _      NONE
+```
+**Uso (todos ejecutan Ctrl+Space + comando con 1ms de espera):**
+- Hold T + Z = Ctrl+Space → Z (tmux prefix + z)
+- Hold T + K = Ctrl+Space → % (split pane horizontalmente)
+- Hold T + L = Ctrl+Space → " (split pane verticalmente)
+- Hold T + ; = Ctrl+Space → ; (último pane activo)
+
+---
+
+## **Capa 6: Tmux Windows** (hold W)
+```
+NONE  _  W(hold)  _  _  _          _      Win7  Win8  Win9  WPrev  NONE
+NONE  _  _        _  _  _          _      Win4  Win5  Win6  _      NONE
+NONE  _  _        _  _  _          WNext  Win1  Win2  Win3  _      NONE
+```
+**Uso (Ctrl+Space → número/comando):**
+- Hold W + M = Ctrl+Space → 1 (ir a window 1)
+- Hold W + , = Ctrl+Space → 2 (ir a window 2)
+- Hold W + números (1-9) = ir a esa window
+- Hold W + N = Ctrl+Space → n (next window)
+- Hold W + P = Ctrl+Space → p (previous window)
+
+---
+
+## **Capa 7: Tmux Panes** (hold Q)
+```
+NONE  Q(hold)  _  _  _  _          _      Pane7  Pane8  Pane9  PPrev  NONE
+NONE  _        _  _  _  _          _      Pane4  Pane5  Pane6  _      NONE
+NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
+```
+**Uso (Ctrl+Space → q → número/comando o Ctrl+Space → o/;):**
+- Hold Q + M = Ctrl+Space → q → 1 (ir a pane 1)
+- Hold Q + , = Ctrl+Space → q → 2 (ir a pane 2)
+- Hold Q + números (1-9) = ir a ese pane
+- Hold Q + N = Ctrl+Space → o (pane next)
+- Hold Q + P = Ctrl+Space → ; (pane previous)
+
+---
+
 ## Combos
 
 **Combos básicos:**
@@ -73,5 +130,6 @@ NONE  _  _  _  _  _        _  _  _  _  _  NONE
 - `_` = transparente/vacío
 - BT1-5 = perfiles Bluetooth (cambiar dispositivo)
 - BTCLR = borrar todos los perfiles BT
-- Home row mods: tap=letra, hold=modificador (280ms)
+- Home row mods: tap=letra, hold=modificador (300ms)
+- Win num behaviors: tap=Win+Num, hold=Win+Shift+Num (200ms)
 - Combos: timeout 50ms
