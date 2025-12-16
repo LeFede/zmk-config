@@ -135,9 +135,9 @@
                                  , <&macro_wait_time 1>
                                  , <&kp COLON>
                                  , <&macro_wait_time 10>
-                                 , <&kp N> <&kp E> <&kp W>
+                                 , <&kp N>, <&kp E>, <&kp W>
                                  , <&kp MINUS>
-                                 , <&kp S> <&kp E> <&kp S> <&kp S> <&kp I> <&kp O> <&kp N>
+                                 , <&kp S>, <&kp E>, <&kp S>, <&kp S>, <&kp I>, <&kp O>, <&kp N>
                                  , <&kp RET>;
                 };
                 tmux_kill_pane: tmux_kill_pane {
@@ -167,9 +167,9 @@
                                  , <&macro_wait_time 1>
                                  , <&kp COLON>
                                  , <&macro_wait_time 10>
-                                 , <&kp K> <&kp I> <&kp L> <&kp L>
+                                 , <&kp K>, <&kp I>, <&kp L>, <&kp L>
                                  , <&kp MINUS>
-                                 , <&kp S> <&kp E> <&kp S> <&kp S> <&kp I> <&kp O> <&kp N>
+                                 , <&kp S>, <&kp E>, <&kp S>, <&kp S>, <&kp I>, <&kp O>, <&kp N>
                                  , <&kp RET>;
                 };
                 tmux_percent: tmux_percent {
