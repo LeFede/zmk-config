@@ -8,14 +8,16 @@ Las columnas externas están marcadas como `&none` porque no existen físicament
 NONE  Q  W  E  R  T        Y  U  I  O  P  NONE
 NONE  A  S  D  F  G        H  J  K  L  ;  NONE
 NONE  Z  X  C  V  B        N  M  ,  .  /  NONE
-         _  1  SPC         ENT  BSPC  DEL
+         BT NUM SPC        ENT  BSPC  DEL
 ```
 **Home row mods:**
 - A=GUI, S=ALT, D=SHIFT, F=CTRL (izq)
 - J=CTRL, K=SHIFT, L=ALT, ;=GUI (der)
 
 **Pulgares:**
-- 1 = Capa Numpad (hold)
+- BT = Capa Bluetooth (hold)
+- NUM = Capa Numpad (hold)
+- SPC = Space
 - ENT = Enter (tap) / Capa Nav (hold)
 - BSPC = Backspace (tap) / Capa Edit (hold)
 - DEL = Delete
@@ -24,9 +26,9 @@ NONE  Z  X  C  V  B        N  M  ,  .  /  NONE
 
 ## **Capa 1: Numpad**
 ```
-NONE  BT1  BT2  BT3  BT4  BT5        _  7  8  9  _  NONE
-NONE  _    _    _    _    _          _  4  5  6  _  NONE
-NONE  BTCLR _   _    _    _          0  1  2  3  _  NONE
+NONE  _    _    [   ]   _          _  7  8  9  _  NONE
+NONE  {    }    (   )   _          _  4  5  6  _  NONE
+NONE  _    _    _   _   _          0  1  2  3  _  NONE
 ```
 
 ---
@@ -109,6 +111,18 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 - Hold Q + números (1-9) = ir a ese pane
 - Hold Q + N = Ctrl+Space → o (pane next)
 - Hold Q + P = Ctrl+Space → ; (pane previous)
+
+---
+
+## **Capa 8: Bluetooth** (hold primer botón pulgar izquierdo)
+```
+NONE  BT1  BT2  BT3  BT4  BT5        _  _  _  _  _  NONE
+NONE  _    _    _    _    _          _  _  _  _  _  NONE
+NONE  BTCLR _   _    _    _          _  _  _  _  _  NONE
+```
+**Uso:**
+- BT1-BT5 = Seleccionar perfil Bluetooth (1-5)
+- BTCLR = Borrar todos los perfiles BT
 
 ---
 
