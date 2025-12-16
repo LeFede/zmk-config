@@ -140,7 +140,7 @@ NONE  BTCLR _   _    _    _          _  _  _  _  _  NONE
 - **Space + C** = Ctrl+Shift+C (copy)
 
 **Combos de Tmux:**
-- **W + N** (combo) = Crear nueva window (Ctrl+Space → C)
+- **T + N** (combo) = Crear nueva window (Ctrl+Space → C)
 - **Hold W + N** (layer) = Window next (Ctrl+Space → n)
 - **S + N** = Crear nueva session (Ctrl+Space → :new-session)
 - **Q + BSPC** = Cerrar pane actual (Ctrl+Space → x → y)

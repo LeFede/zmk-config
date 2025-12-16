@@ -634,7 +634,7 @@
                 };
                 combo_tmux_new_win {
                         timeout-ms = <50>;
-                        key-positions = <2 30>;
+                        key-positions = <5 30>;
                         bindings = <&tmux_new_window>;
                 };
                 combo_tmux_new_session {
