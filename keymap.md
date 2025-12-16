@@ -8,7 +8,7 @@ Las columnas externas están marcadas como `&none` porque no existen físicament
 NONE  Q  W  E  R  T        Y  U  I  O  P  NONE
 NONE  A  S  D  F  G        H  J  K  L  ;  NONE
 NONE  Z  X  C  V  B        N  M  ,  .  /  NONE
-         _  1  SPC         ENT  2  _
+         _  1  SPC         ENT  BSPC  DEL
 ```
 **Home row mods:**
 - A=GUI, S=ALT, D=SHIFT, F=CTRL (izq)
@@ -16,8 +16,9 @@ NONE  Z  X  C  V  B        N  M  ,  .  /  NONE
 
 **Pulgares:**
 - 1 = Capa Numpad (hold)
-- 2 = Capa Edit (hold)
 - ENT = Enter (tap) / Capa Nav (hold)
+- BSPC = Backspace (tap) / Capa Edit (hold)
+- DEL = Delete
 
 ---
 
@@ -30,12 +31,13 @@ NONE  BTCLR _   _    _    _          0  1  2  3  _  NONE
 
 ---
 
-## **Capa 2: Edit**
+## **Capa 2: Edit** (vacía - reservada para futuros usos)
 ```
-NONE  _  _  _  _  _        _     _  _  _    _  NONE
-NONE  _  _  _  _  _        BSPC  _  _  DEL  _  NONE
-NONE  _  _  _  _  _        _     _  _  _    _  NONE
+NONE  _  _  _  _  _        _  _  _  _  _  NONE
+NONE  _  _  _  _  _        _  _  _  _  _  NONE
+NONE  _  _  _  _  _        _  _  _  _  _  NONE
 ```
+*Nota: Backspace y Delete ahora están en los pulgares*
 
 ---
 
@@ -50,28 +52,32 @@ NONE  _  _  _  _  _        _  _  _  _  _  NONE
 
 ## **Capa 4: WinNum** (hold G)
 ```
-NONE  _  _  _  _  _          _    W+7  W+8  W+9  _  NONE
-NONE  _  _  _  _  G(hold)    _    W+4  W+5  W+6  _  NONE
-NONE  _  _  _  _  _          W+0  W+1  W+2  W+3  _  NONE
+NONE  W+S+Q  _  _  _  _          _    W+7  W+8  W+9  _  NONE
+NONE  _      _  _  _  G(hold)    _    W+4  W+5  W+6  _  NONE
+NONE  _      _  _  _  _          W+0  W+1  W+2  W+3  _  NONE
 ```
 **Uso:**
 - Hold G + tap M = Win+1
 - Hold G + hold M = Win+Shift+1
+- Hold G + Q = Win+Shift+Q (cerrar ventana en i3)
 - Y así con todos los números en sus posiciones del numpad
 
 ---
 
 ## **Capa 5: Tmux** (hold T)
 ```
-NONE  _  _  _  _  T(hold)    _  _          _          _         _      NONE
-NONE  _  _  _  _  _          _  _          C-SPC %    C-SPC "   C-SPC; NONE
-NONE  Z  _  _  _  _          _  _          _          _         _      NONE
+NONE  _  _      _  _  T(hold)    _  _          _          _         _      NONE
+NONE  _  C-SPC S  _  _  _        _  _          C-SPC %    C-SPC "   C-SPC; NONE
+NONE  Z  _      _  _  _          _  _          C-SPC ,    C-SPC .   _      NONE
 ```
 **Uso (todos ejecutan Ctrl+Space + comando con 1ms de espera):**
-- Hold T + Z = Ctrl+Space → Z (tmux prefix + z)
-- Hold T + K = Ctrl+Space → % (split pane horizontalmente)
-- Hold T + L = Ctrl+Space → " (split pane verticalmente)
-- Hold T + ; = Ctrl+Space → ; (último pane activo)
+- Hold T + Z = Ctrl+Space → Z (zoom pane)
+- Hold T + S = Ctrl+Space → S (session list)
+- Hold T + K = Ctrl+Space → % (split horizontal)
+- Hold T + L = Ctrl+Space → " (split vertical)
+- Hold T + ; = Ctrl+Space → ; (último pane)
+- Hold T + , = Ctrl+Space → , (renombrar window)
+- Hold T + . = Ctrl+Space → . (mover window)
 
 ---
 
@@ -109,11 +115,20 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 
 **Combos básicos:**
 - **J + K** = ESC
+- **J + K + L** = TAB
 - **C + V** = =
 - **M + ,** = -
 - **, + .** = '
 - **M + , + .** = `
 - **, + . + /** = \
+
+**Combos de Tmux:**
+- **W + N** (combo) = Crear nueva window (Ctrl+Space → C)
+- **Hold W + N** (layer) = Window next (Ctrl+Space → n)
+- **S + N** = Crear nueva session (Ctrl+Space → :new-session)
+- **Q + BSPC** = Cerrar pane actual (Ctrl+Space → x)
+- **W + BSPC** = Cerrar window actual (Ctrl+Space → &)
+- **S + BSPC** = Cerrar session actual (Ctrl+Space → :kill-session)
 
 **D + F + número** = símbolo correspondiente:
 - **D + F + M** (1) = !
@@ -124,6 +139,20 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 - **D + F + L** (6) = ^
 - **D + F + U** (7) = &
 - **D + F + I** (8) = *
+
+**Botón pulgar izquierdo + tecla** = teclas F:
+- **Botón + M** = F1
+- **Botón + ,** = F2
+- **Botón + .** = F3
+- **Botón + J** = F4
+- **Botón + K** = F5
+- **Botón + L** = F6
+- **Botón + U** = F7
+- **Botón + I** = F8
+- **Botón + O** = F9
+- **Botón + /** = F10
+- **Botón + ;** = F11
+- **Botón + P** = F12
 
 ## Notas
 - `NONE` = tecla que no existe físicamente (columnas externas)

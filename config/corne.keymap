@@ -90,6 +90,88 @@
                                  , <&macro_wait_time 1>
                                  , <&kp Z>;
                 };
+                tmux_s: tmux_s {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp S>;
+                };
+                tmux_comma: tmux_comma {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp COMMA>;
+                };
+                tmux_dot: tmux_dot {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp DOT>;
+                };
+                tmux_new_window: tmux_new_window {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp C>;
+                };
+                tmux_new_session: tmux_new_session {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp COLON>
+                                 , <&macro_wait_time 10>
+                                 , <&kp N> <&kp E> <&kp W>
+                                 , <&kp MINUS>
+                                 , <&kp S> <&kp E> <&kp S> <&kp S> <&kp I> <&kp O> <&kp N>
+                                 , <&kp RET>;
+                };
+                tmux_kill_pane: tmux_kill_pane {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp X>;
+                };
+                tmux_kill_window: tmux_kill_window {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp AMPS>;
+                };
+                tmux_kill_session: tmux_kill_session {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp COLON>
+                                 , <&macro_wait_time 10>
+                                 , <&kp K> <&kp I> <&kp L> <&kp L>
+                                 , <&kp MINUS>
+                                 , <&kp S> <&kp E> <&kp S> <&kp S> <&kp I> <&kp O> <&kp N>
+                                 , <&kp RET>;
+                };
                 tmux_percent: tmux_percent {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
@@ -233,6 +315,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N0>;
                 };
                 tmux_pane_1: tmux_pane_1 {
@@ -243,6 +326,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N1>;
                 };
                 tmux_pane_2: tmux_pane_2 {
@@ -253,6 +337,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N2>;
                 };
                 tmux_pane_3: tmux_pane_3 {
@@ -263,6 +348,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N3>;
                 };
                 tmux_pane_4: tmux_pane_4 {
@@ -273,6 +359,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N4>;
                 };
                 tmux_pane_5: tmux_pane_5 {
@@ -283,6 +370,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N5>;
                 };
                 tmux_pane_6: tmux_pane_6 {
@@ -293,6 +381,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N6>;
                 };
                 tmux_pane_7: tmux_pane_7 {
@@ -303,6 +392,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N7>;
                 };
                 tmux_pane_8: tmux_pane_8 {
@@ -313,6 +403,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N8>;
                 };
                 tmux_pane_9: tmux_pane_9 {
@@ -323,6 +414,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
+                                 , <&macro_wait_time 100>
                                  , <&kp N9>;
                 };
                 tmux_pane_next: tmux_pane_next {
@@ -342,6 +434,11 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp SEMI>;
+                };
+                win_shift_q: win_shift_q {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp LG(LS(Q))>;
                 };
                 win_1: win_1 {
                         compatible = "zmk,behavior-macro";
@@ -517,6 +614,96 @@
                         key-positions = <31 32 33>;
                         bindings = <&kp GRAVE>;
                 };
+                combo_tab {
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21>;
+                        bindings = <&kp TAB>;
+                };
+                combo_tmux_new_win {
+                        timeout-ms = <50>;
+                        key-positions = <2 30>;
+                        bindings = <&tmux_new_window>;
+                };
+                combo_tmux_new_session {
+                        timeout-ms = <50>;
+                        key-positions = <14 30>;
+                        bindings = <&tmux_new_session>;
+                };
+                combo_tmux_kill_pane {
+                        timeout-ms = <50>;
+                        key-positions = <1 40>;
+                        bindings = <&tmux_kill_pane>;
+                };
+                combo_tmux_kill_window {
+                        timeout-ms = <50>;
+                        key-positions = <2 40>;
+                        bindings = <&tmux_kill_window>;
+                };
+                combo_tmux_kill_session {
+                        timeout-ms = <50>;
+                        key-positions = <14 40>;
+                        bindings = <&tmux_kill_session>;
+                };
+                combo_f1 {
+                        timeout-ms = <50>;
+                        key-positions = <36 31>;
+                        bindings = <&kp F1>;
+                };
+                combo_f2 {
+                        timeout-ms = <50>;
+                        key-positions = <36 32>;
+                        bindings = <&kp F2>;
+                };
+                combo_f3 {
+                        timeout-ms = <50>;
+                        key-positions = <36 33>;
+                        bindings = <&kp F3>;
+                };
+                combo_f4 {
+                        timeout-ms = <50>;
+                        key-positions = <36 19>;
+                        bindings = <&kp F4>;
+                };
+                combo_f5 {
+                        timeout-ms = <50>;
+                        key-positions = <36 20>;
+                        bindings = <&kp F5>;
+                };
+                combo_f6 {
+                        timeout-ms = <50>;
+                        key-positions = <36 21>;
+                        bindings = <&kp F6>;
+                };
+                combo_f7 {
+                        timeout-ms = <50>;
+                        key-positions = <36 7>;
+                        bindings = <&kp F7>;
+                };
+                combo_f8 {
+                        timeout-ms = <50>;
+                        key-positions = <36 8>;
+                        bindings = <&kp F8>;
+                };
+                combo_f9 {
+                        timeout-ms = <50>;
+                        key-positions = <36 9>;
+                        bindings = <&kp F9>;
+                };
+                combo_f10 {
+                        timeout-ms = <50>;
+                        key-positions = <36 34>;
+                        bindings = <&kp F10>;
+                };
+                combo_f11 {
+                        timeout-ms = <50>;
+                        key-positions = <36 22>;
+                        bindings = <&kp F11>;
+                };
+                combo_f12 {
+                        timeout-ms = <50>;
+                        key-positions = <36 10>;
+                        bindings = <&kp F12>;
+                };
         };
 
         keymap {
@@ -533,7 +720,7 @@
    &none  &lt 7 Q      &lt 6 W     &kp E        &kp R         &lt 5 T    &kp Y &kp U         &kp I        &kp O       &kp P        &none
    &none  &hm LGUI A   &hm LALT S  &hm LSHFT D  &hm LCTRL F   &lt 4 G    &kp H &hm RCTRL J   &hm RSHFT K  &hm RALT L  &hm RGUI SEMI &none
    &none  &kp Z        &kp X       &kp C        &kp V         &kp B      &kp N &kp M         &kp COMMA    &kp DOT     &kp FSLH     &none
-                                                &trans &mo 1 &kp SPACE   &lt 3 RET &mo 2 &trans
+                                                &trans &mo 1 &kp SPACE   &lt 3 RET &lt 2 BSPC &kp DEL
                         >;
                 };
                 numpad_layer {
@@ -555,12 +742,12 @@
                         display-name = "Edit";
 // -----------------------------------------------------------------------------------------
 // |NONE |     |     |     |     |     |   |     |     |     |     |     |NONE |
-// |NONE |     |     |     |     |     |   | BSPC|     |     | DEL |     |NONE |
+// |NONE |     |     |     |     |     |   |     |     |     |     |     |NONE |
 // |NONE |     |     |     |     |     |   |     |     |     |     |     |NONE |
 //                  |     |     |     |   |     |     |     |
                         bindings = <
    &none  &trans   &trans &trans   &trans   &trans      &trans   &trans    &trans   &trans  &trans &none
-   &none  &trans   &trans &trans   &trans   &trans      &kp BSPC &trans    &trans   &kp DEL &trans &none
+   &none  &trans   &trans &trans   &trans   &trans      &trans   &trans    &trans   &trans  &trans &none
    &none  &trans   &trans &trans   &trans   &trans      &trans   &trans    &trans   &trans  &trans &none
                                    &trans   &trans   &trans      &trans   &trans    &trans
                         >;
@@ -584,14 +771,14 @@
                 win_num_layer {
                         display-name = "WinNum";
 // -----------------------------------------------------------------------------------------
-// |NONE |     |     |     |     |     |   |     | W+7 | W+8 | W+9 |     |NONE |
+// |NONE |W+S+Q|     |     |     |     |   |     | W+7 | W+8 | W+9 |     |NONE |
 // |NONE |     |     |     |     |  G  |   |     | W+4 | W+5 | W+6 |     |NONE |
 // |NONE |     |     |     |     |     |   | W+0 | W+1 | W+2 | W+3 |     |NONE |
 //                  |     |     |     |   |     |     |     |
                         bindings = <
-   &none  &trans   &trans &trans   &trans   &trans      &trans    &wn7 0 0  &wn8 0 0  &wn9 0 0  &trans &none
-   &none  &trans   &trans &trans   &trans   &trans      &trans    &wn4 0 0  &wn5 0 0  &wn6 0 0  &trans &none
-   &none  &trans   &trans &trans   &trans   &trans      &wn0 0 0  &wn1 0 0  &wn2 0 0  &wn3 0 0  &trans &none
+   &none  &win_shift_q   &trans &trans   &trans   &trans      &trans    &wn7 0 0  &wn8 0 0  &wn9 0 0  &trans &none
+   &none  &trans         &trans &trans   &trans   &trans      &trans    &wn4 0 0  &wn5 0 0  &wn6 0 0  &trans &none
+   &none  &trans         &trans &trans   &trans   &trans      &wn0 0 0  &wn1 0 0  &wn2 0 0  &wn3 0 0  &trans &none
                                    &trans   &trans   &trans      &trans   &trans    &trans
                         >;
                 };
@@ -600,14 +787,14 @@
                         display-name = "Tmux";
 // -----------------------------------------------------------------------------------------
 // |NONE |     |     |     |     |  T  |   |     |     |     |     |     |NONE |
-// |NONE |     |     |     |     |     |   |     |     | C-SPC %| C-SPC "| C-SPC ;|NONE |
-// |NONE |C-SPC Z|  |     |     |     |   |     |     |     |     |     |NONE |
+// |NONE |     |C-SPC S|  |     |     |   |     |     | C-SPC %| C-SPC "| C-SPC ;|NONE |
+// |NONE |C-SPC Z|  |     |     |     |   |     |     | C-SPC , | C-SPC . |     |NONE |
 //                  |     |     |     |   |     |     |     |
                         bindings = <
-   &none  &trans   &trans &trans   &trans   &trans           &trans    &trans        &trans        &trans           &trans           &none
-   &none  &trans   &trans &trans   &trans   &trans           &trans    &trans        &tmux_percent &tmux_quote      &tmux_semicolon  &none
-   &none  &tmux_z  &trans &trans   &trans   &trans           &trans    &trans        &trans        &trans           &trans           &none
-                                   &trans   &trans   &trans      &trans   &trans    &trans
+   &none  &trans   &trans  &trans   &trans   &trans           &trans    &trans        &trans        &trans           &trans           &none
+   &none  &trans   &tmux_s &trans   &trans   &trans           &trans    &trans        &tmux_percent &tmux_quote      &tmux_semicolon  &none
+   &none  &tmux_z  &trans  &trans   &trans   &trans           &trans    &trans        &tmux_comma   &tmux_dot        &trans           &none
+                                    &trans   &trans   &trans      &trans   &trans    &trans
                         >;
                 };
 
