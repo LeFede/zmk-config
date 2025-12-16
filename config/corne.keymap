@@ -13,8 +13,8 @@
                 hm: homerow_mods {
                         compatible = "zmk,behavior-hold-tap";
                         #binding-cells = <2>;
-                        tapping-term-ms = <300>;
-                        quick-tap-ms = <0>;
+                        tapping-term-ms = <150>;
+                        quick-tap-ms = <200>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
@@ -742,6 +742,16 @@
                         key-positions = <31 32 4>;
                         bindings = <&kp RBKT>;
                 };
+                combo_paste {
+                        timeout-ms = <50>;
+                        key-positions = <38 28>;
+                        bindings = <&kp LC(LS(V))>;
+                };
+                combo_copy {
+                        timeout-ms = <50>;
+                        key-positions = <38 27>;
+                        bindings = <&kp LC(LS(C))>;
+                };
         };
 
         keymap {
@@ -794,14 +804,14 @@
                 nav_layer {
                         display-name = "Nav";
 // -----------------------------------------------------------------------------------------
-// |NONE |     |     |     |     |     |   |     |     |     |     |     |NONE |
+// |NONE |     |     |     |     |     |   | HOME| PGDN| PGUP| END |     |NONE |
 // |NONE |     |     |     |     |     |   |  ←  |  ↓  |  ↑  |  →  |     |NONE |
 // |NONE |     |     |     |     |     |   |     |     |     |     |     |NONE |
 //                  |     |     |     |   |     |     |     |
                         bindings = <
-   &none  &trans   &trans &trans   &trans   &trans      &trans   &trans    &trans   &trans    &trans &none
-   &none  &trans   &trans &trans   &trans   &trans      &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &none
-   &none  &trans   &trans &trans   &trans   &trans      &trans   &trans    &trans   &trans    &trans &none
+   &none  &trans   &trans &trans   &trans   &trans      &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &none
+   &none  &trans   &trans &trans   &trans   &trans      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &none
+   &none  &trans   &trans &trans   &trans   &trans      &trans   &trans    &trans    &trans    &trans &none
                                    &trans   &trans   &trans      &trans   &trans    &trans
                         >;
                 };

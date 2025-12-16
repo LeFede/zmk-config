@@ -43,9 +43,9 @@ NONE  _  _  _  _  _        _  _  _  _  _  NONE
 
 ## **Capa 3: Nav** (hold Enter)
 ```
-NONE  _  _  _  _  _        _  _  _  _  _  NONE
-NONE  _  _  _  _  _        ←  ↓  ↑  →  _  NONE
-NONE  _  _  _  _  _        _  _  _  _  _  NONE
+NONE  _  _  _  _  _        HOME  PGDN  PGUP  END  _  NONE
+NONE  _  _  _  _  _        ←     ↓     ↑     →    _  NONE
+NONE  _  _  _  _  _        _     _     _     _    _  NONE
 ```
 
 ---
@@ -122,6 +122,8 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 - **, + .** = '
 - **M + , + .** = `
 - **, + . + /** = \
+- **Space + V** = Ctrl+Shift+V (paste)
+- **Space + C** = Ctrl+Shift+C (copy)
 
 **Combos de Tmux:**
 - **W + N** (combo) = Crear nueva window (Ctrl+Space → C)
@@ -167,6 +169,6 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 - `_` = transparente/vacío
 - BT1-5 = perfiles Bluetooth (cambiar dispositivo)
 - BTCLR = borrar todos los perfiles BT
-- Home row mods: tap=letra, hold=modificador (300ms)
+- Home row mods: tap=letra, hold=modificador (150ms)
 - Win num behaviors: tap=Win+Num, hold=Win+Shift+Num (200ms)
 - Combos: timeout 50ms
