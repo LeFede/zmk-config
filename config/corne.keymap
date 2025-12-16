@@ -328,7 +328,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N0>;
                 };
                 tmux_pane_1: tmux_pane_1 {
@@ -339,7 +339,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N1>;
                 };
                 tmux_pane_2: tmux_pane_2 {
@@ -350,7 +350,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N2>;
                 };
                 tmux_pane_3: tmux_pane_3 {
@@ -361,7 +361,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N3>;
                 };
                 tmux_pane_4: tmux_pane_4 {
@@ -372,7 +372,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N4>;
                 };
                 tmux_pane_5: tmux_pane_5 {
@@ -383,7 +383,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N5>;
                 };
                 tmux_pane_6: tmux_pane_6 {
@@ -394,7 +394,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N6>;
                 };
                 tmux_pane_7: tmux_pane_7 {
@@ -405,7 +405,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N7>;
                 };
                 tmux_pane_8: tmux_pane_8 {
@@ -416,7 +416,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N8>;
                 };
                 tmux_pane_9: tmux_pane_9 {
@@ -427,7 +427,7 @@
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
                                  , <&kp Q>
-                                 , <&macro_wait_time 100>
+                                 , <&macro_wait_time 200>
                                  , <&kp N9>;
                 };
                 tmux_pane_next: tmux_pane_next {
@@ -564,42 +564,42 @@
                 };
                 combo_excl {
                         timeout-ms = <50>;
-                        key-positions = <15 16 31>;
+                        key-positions = <27 28 31>;
                         bindings = <&kp EXCL>;
                 };
                 combo_at {
                         timeout-ms = <50>;
-                        key-positions = <15 16 32>;
+                        key-positions = <27 28 32>;
                         bindings = <&kp AT>;
                 };
                 combo_hash {
                         timeout-ms = <50>;
-                        key-positions = <15 16 33>;
+                        key-positions = <27 28 33>;
                         bindings = <&kp HASH>;
                 };
                 combo_dollar {
                         timeout-ms = <50>;
-                        key-positions = <15 16 19>;
+                        key-positions = <27 28 19>;
                         bindings = <&kp DLLR>;
                 };
                 combo_percent {
                         timeout-ms = <50>;
-                        key-positions = <15 16 20>;
+                        key-positions = <27 28 20>;
                         bindings = <&kp PRCNT>;
                 };
                 combo_caret {
                         timeout-ms = <50>;
-                        key-positions = <15 16 21>;
+                        key-positions = <27 28 21>;
                         bindings = <&kp CARET>;
                 };
                 combo_ampersand {
                         timeout-ms = <50>;
-                        key-positions = <15 16 7>;
+                        key-positions = <27 28 7>;
                         bindings = <&kp AMPS>;
                 };
                 combo_asterisk {
                         timeout-ms = <50>;
-                        key-positions = <15 16 8>;
+                        key-positions = <27 28 8>;
                         bindings = <&kp ASTRK>;
                 };
                 combo_equal {

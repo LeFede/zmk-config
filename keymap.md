@@ -146,15 +146,15 @@ NONE  BTCLR _   _    _    _          _  _  _  _  _  NONE
 - **Q + BSPC** = Cerrar pane actual (Ctrl+Space → x → y)
 - **W + BSPC** = Cerrar window actual (Ctrl+Space → & → y)
 
-**D + F + número** = símbolo correspondiente:
-- **D + F + M** (1) = !
-- **D + F + ,** (2) = @
-- **D + F + .** (3) = #
-- **D + F + J** (4) = $
-- **D + F + K** (5) = %
-- **D + F + L** (6) = ^
-- **D + F + U** (7) = &
-- **D + F + I** (8) = *
+**C + V + número** = símbolo correspondiente:
+- **C + V + M** (1) = !
+- **C + V + ,** (2) = @
+- **C + V + .** (3) = #
+- **C + V + J** (4) = $
+- **C + V + K** (5) = %
+- **C + V + L** (6) = ^
+- **C + V + U** (7) = &
+- **C + V + I** (8) = *
 
 **Combos M + , + home row** = paréntesis y corchetes:
 - **M + , + A** = {
