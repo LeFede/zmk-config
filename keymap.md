@@ -48,9 +48,30 @@ NONE  _  _  _  _  _        _  _  _  _  _  NONE
 
 ---
 
+## Combos
+
+**Combos básicos:**
+- **J + K** = ESC
+- **C + V** = =
+- **M + ,** = -
+- **, + .** = '
+- **M + , + .** = `
+- **, + . + /** = \
+
+**D + F + número** = símbolo correspondiente:
+- **D + F + M** (1) = !
+- **D + F + ,** (2) = @
+- **D + F + .** (3) = #
+- **D + F + J** (4) = $
+- **D + F + K** (5) = %
+- **D + F + L** (6) = ^
+- **D + F + U** (7) = &
+- **D + F + I** (8) = *
+
 ## Notas
 - `NONE` = tecla que no existe físicamente (columnas externas)
 - `_` = transparente/vacío
 - BT1-5 = perfiles Bluetooth (cambiar dispositivo)
 - BTCLR = borrar todos los perfiles BT
-- Home row mods: tap=letra, hold=modificador
+- Home row mods: tap=letra, hold=modificador (280ms)
+- Combos: timeout 50ms
