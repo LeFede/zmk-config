@@ -1,11 +1,14 @@
-# Configuración ZMK - Corne 36 teclas
+# Configuración ZMK - Corne 36 teclas (usando shield de 42)
+
+**IMPORTANTE:** Físicamente tienes 36 teclas, pero usamos el shield de 42 teclas del Corne estándar.
+Las columnas externas están marcadas como `&none` porque no existen físicamente.
 
 ## **Capa 0: Base**
 ```
-Q  W  E  R  T        Y  U  I  O  P
-A  S  D  F  G        H  J  K  L  ;
-Z  X  C  V  B        N  M  ,  .  /
-      _  1  SPC      ENT  2  _
+NONE  Q  W  E  R  T        Y  U  I  O  P  NONE
+NONE  A  S  D  F  G        H  J  K  L  ;  NONE
+NONE  Z  X  C  V  B        N  M  ,  .  /  NONE
+         _  1  SPC         ENT  2  _
 ```
 **Home row mods:**
 - A=GUI, S=ALT, D=SHIFT, F=CTRL (izq)
@@ -20,32 +23,33 @@ Z  X  C  V  B        N  M  ,  .  /
 
 ## **Capa 1: Numpad**
 ```
-BT1  BT2  BT3  BT4  BT5        _  7  8  9  _
-_    _    _    _    _          _  4  5  6  _
-BTCLR _   _    _    _          0  1  2  3  _
+NONE  BT1  BT2  BT3  BT4  BT5        _  7  8  9  _  NONE
+NONE  _    _    _    _    _          _  4  5  6  _  NONE
+NONE  BTCLR _   _    _    _          0  1  2  3  _  NONE
 ```
 
 ---
 
 ## **Capa 2: Edit**
 ```
-_  _  _  _  _        _     _  _  _    _
-_  _  _  _  _        BSPC  _  _  DEL  _
-_  _  _  _  _        _     _  _  _    _
+NONE  _  _  _  _  _        _     _  _  _    _  NONE
+NONE  _  _  _  _  _        BSPC  _  _  DEL  _  NONE
+NONE  _  _  _  _  _        _     _  _  _    _  NONE
 ```
 
 ---
 
 ## **Capa 3: Nav** (hold Enter)
 ```
-_  _  _  _  _        _  _  _  _  _
-_  _  _  _  _        ←  ↓  ↑  →  _
-_  _  _  _  _        _  _  _  _  _
+NONE  _  _  _  _  _        _  _  _  _  _  NONE
+NONE  _  _  _  _  _        ←  ↓  ↑  →  _  NONE
+NONE  _  _  _  _  _        _  _  _  _  _  NONE
 ```
 
 ---
 
 ## Notas
+- `NONE` = tecla que no existe físicamente (columnas externas)
 - `_` = transparente/vacío
 - BT1-5 = perfiles Bluetooth (cambiar dispositivo)
 - BTCLR = borrar todos los perfiles BT
