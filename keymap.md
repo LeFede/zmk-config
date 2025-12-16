@@ -66,11 +66,12 @@ NONE  _      _  _  _  _          W+0  W+1  W+2  W+3  _  NONE
 
 ## **Capa 5: Tmux** (hold T)
 ```
-NONE  _  _      _  _  T(hold)    _  _          _          _         _      NONE
-NONE  _  C-SPC S  _  _  _        _  _          C-SPC %    C-SPC "   C-SPC; NONE
-NONE  Z  _      _  _  _          _  _          C-SPC ,    C-SPC .   _      NONE
+NONE  _  _      C-SPC [  _  T(hold)    _  _          _          _         _      NONE
+NONE  _  C-SPC S  _  _  _              _  _          C-SPC %    C-SPC "   C-SPC; NONE
+NONE  Z  _      _  _  _                _  _          C-SPC ,    C-SPC .   _      NONE
 ```
 **Uso (todos ejecutan Ctrl+Space + comando con 1ms de espera):**
+- Hold T + E = Ctrl+Space → [ (copy mode / navegación)
 - Hold T + Z = Ctrl+Space → Z (zoom pane)
 - Hold T + S = Ctrl+Space → S (session list)
 - Hold T + K = Ctrl+Space → % (split horizontal)
@@ -126,9 +127,8 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 - **W + N** (combo) = Crear nueva window (Ctrl+Space → C)
 - **Hold W + N** (layer) = Window next (Ctrl+Space → n)
 - **S + N** = Crear nueva session (Ctrl+Space → :new-session)
-- **Q + BSPC** = Cerrar pane actual (Ctrl+Space → x)
-- **W + BSPC** = Cerrar window actual (Ctrl+Space → &)
-- **S + BSPC** = Cerrar session actual (Ctrl+Space → :kill-session)
+- **Q + BSPC** = Cerrar pane actual (Ctrl+Space → x → y)
+- **W + BSPC** = Cerrar window actual (Ctrl+Space → & → y)
 
 **D + F + número** = símbolo correspondiente:
 - **D + F + M** (1) = !
@@ -139,6 +139,14 @@ NONE  _        _  _  _  _          PNext  Pane1  Pane2  Pane3  _      NONE
 - **D + F + L** (6) = ^
 - **D + F + U** (7) = &
 - **D + F + I** (8) = *
+
+**Combos M + , + home row** = paréntesis y corchetes:
+- **M + , + A** = {
+- **M + , + S** = }
+- **M + , + D** = (
+- **M + , + F** = )
+- **M + , + E** = [
+- **M + , + R** = ]
 
 **Botón pulgar izquierdo + tecla** = teclas F:
 - **Botón + M** = F1

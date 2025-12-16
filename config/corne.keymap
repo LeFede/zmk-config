@@ -117,6 +117,15 @@
                                  , <&macro_wait_time 1>
                                  , <&kp DOT>;
                 };
+                tmux_copy_mode: tmux_copy_mode {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <1>;
+                        tap-ms = <1>;
+                        bindings = <&kp LC(SPACE)>
+                                 , <&macro_wait_time 1>
+                                 , <&kp LBKT>;
+                };
                 tmux_new_window: tmux_new_window {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
@@ -147,7 +156,9 @@
                         tap-ms = <1>;
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
-                                 , <&kp X>;
+                                 , <&kp X>
+                                 , <&macro_wait_time 10>
+                                 , <&kp Y>;
                 };
                 tmux_kill_window: tmux_kill_window {
                         compatible = "zmk,behavior-macro";
@@ -156,7 +167,9 @@
                         tap-ms = <1>;
                         bindings = <&kp LC(SPACE)>
                                  , <&macro_wait_time 1>
-                                 , <&kp AMPS>;
+                                 , <&kp AMPS>
+                                 , <&macro_wait_time 10>
+                                 , <&kp Y>;
                 };
                 tmux_kill_session: tmux_kill_session {
                         compatible = "zmk,behavior-macro";
@@ -639,11 +652,6 @@
                         key-positions = <2 40>;
                         bindings = <&tmux_kill_window>;
                 };
-                combo_tmux_kill_session {
-                        timeout-ms = <50>;
-                        key-positions = <14 40>;
-                        bindings = <&tmux_kill_session>;
-                };
                 combo_f1 {
                         timeout-ms = <50>;
                         key-positions = <36 31>;
@@ -703,6 +711,36 @@
                         timeout-ms = <50>;
                         key-positions = <36 10>;
                         bindings = <&kp F12>;
+                };
+                combo_lbrc {
+                        timeout-ms = <50>;
+                        key-positions = <31 32 13>;
+                        bindings = <&kp LBRC>;
+                };
+                combo_rbrc {
+                        timeout-ms = <50>;
+                        key-positions = <31 32 14>;
+                        bindings = <&kp RBRC>;
+                };
+                combo_lpar {
+                        timeout-ms = <50>;
+                        key-positions = <31 32 15>;
+                        bindings = <&kp LPAR>;
+                };
+                combo_rpar {
+                        timeout-ms = <50>;
+                        key-positions = <31 32 16>;
+                        bindings = <&kp RPAR>;
+                };
+                combo_lbkt {
+                        timeout-ms = <50>;
+                        key-positions = <31 32 3>;
+                        bindings = <&kp LBKT>;
+                };
+                combo_rbkt {
+                        timeout-ms = <50>;
+                        key-positions = <31 32 4>;
+                        bindings = <&kp RBKT>;
                 };
         };
 
@@ -786,12 +824,12 @@
                 tmux_layer {
                         display-name = "Tmux";
 // -----------------------------------------------------------------------------------------
-// |NONE |     |     |     |     |  T  |   |     |     |     |     |     |NONE |
+// |NONE |     |     | C-SPC [ |     |  T  |   |     |     |     |     |     |NONE |
 // |NONE |     |C-SPC S|  |     |     |   |     |     | C-SPC %| C-SPC "| C-SPC ;|NONE |
 // |NONE |C-SPC Z|  |     |     |     |   |     |     | C-SPC , | C-SPC . |     |NONE |
 //                  |     |     |     |   |     |     |     |
                         bindings = <
-   &none  &trans   &trans  &trans   &trans   &trans           &trans    &trans        &trans        &trans           &trans           &none
+   &none  &trans   &trans  &tmux_copy_mode   &trans   &trans           &trans    &trans        &trans        &trans           &trans           &none
    &none  &trans   &tmux_s &trans   &trans   &trans           &trans    &trans        &tmux_percent &tmux_quote      &tmux_semicolon  &none
    &none  &tmux_z  &trans  &trans   &trans   &trans           &trans    &trans        &tmux_comma   &tmux_dot        &trans           &none
                                     &trans   &trans   &trans      &trans   &trans    &trans
