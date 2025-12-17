@@ -752,11 +752,6 @@
                         key-positions = <38 27>;
                         bindings = <&kp LC(LS(C))>;
                 };
-                combo_shift_oneshot {
-                        timeout-ms = <50>;
-                        key-positions = <15 16>;
-                        bindings = <&sk LSHFT>;
-                };
                 combo_caps_lock {
                         timeout-ms = <50>;
                         key-positions = <14 15 16>;
