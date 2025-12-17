@@ -138,6 +138,7 @@ NONE  BTCLR _   _    _    _          _  _  _  _  _  NONE
 - **, + . + /** = \
 - **Space + V** = Ctrl+Shift+V (paste)
 - **Space + C** = Ctrl+Shift+C (copy)
+- **D + F** = Shift (oneshot - se mantiene para la siguiente tecla)
 - **S + D + F** = Caps Lock (toggle)
 
 **Combos de Tmux:**
