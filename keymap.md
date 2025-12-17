@@ -33,13 +33,21 @@ NONE  _    _    _   _   _          0  1  2  3  _  NONE
 
 ---
 
-## **Capa 2: Edit** (vacía - reservada para futuros usos)
+## **Capa 2: Mouse** (hold BSPC)
 ```
-NONE  _  _  _  _  _        _  _  _  _  _  NONE
-NONE  _  _  _  _  _        _  _  _  _  _  NONE
-NONE  _  _  _  _  _        _  _  _  _  _  NONE
+NONE  _  _  _  _  _        _    SclU  SclD  _  _  NONE
+NONE  _  _  _  _  _        ←     ↓     ↑    →  _  NONE
+NONE  _  _  _  _  _        _    LClk  RClk  _  _  NONE
 ```
-*Nota: Backspace y Delete ahora están en los pulgares*
+**Controles de mouse:**
+- **H** = Mouse izquierda ←
+- **J** = Mouse abajo ↓
+- **K** = Mouse arriba ↑
+- **L** = Mouse derecha →
+- **M** = Click izquierdo
+- **,** = Click derecho
+- **U** = Scroll arriba
+- **I** = Scroll abajo
 
 ---
 
