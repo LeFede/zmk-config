@@ -796,6 +796,16 @@
                         key-positions = <38 28>;
                         bindings = <&kp LC(LS(V))>;
                 };
+                combo_screenshot {
+                        timeout-ms = <50>;
+                        key-positions = <38 8>;
+                        bindings = <&kp LC(F8)>;
+                };
+                combo_screenshot_shift {
+                        timeout-ms = <50>;
+                        key-positions = <38 7>;
+                        bindings = <&kp LC(LS(F8))>;
+                };
                 combo_copy {
                         timeout-ms = <50>;
                         key-positions = <38 27>;
